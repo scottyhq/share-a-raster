@@ -14,16 +14,16 @@ We use this [Landsat COG from MS Planetary Computer](https://planetarycomputer.m
 `https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2021/046/027/LC08_L2SP_046027_20210725_20210803_02_T1/LC08_L2SP_046027_20210725_20210803_02_T1_SR_B5.TIF`
 
 It's copied into cogs/, so it's accessible publicly without authentication:
-`gdalinfo https://github.io/scottyhq/share-a-raster/LC08_L2SP_046027_20210725_20210803_02_T1_SR_B5.TIF`
+`gdalinfo https://scottyhq.github.io/share-a-raster/LC08_L2SP_046027_20210725_20210803_02_T1_SR_B5.TIF`
 
 Or you can point somebody to a tiler endpoint, using developmentseed's fantastic [TiTiler](https://developmentseed.org/titiler/)! 
 
-https://titiler.xyz/cog/viewer?url=https://github.io/scottyhq/share-a-map/LC08_L2SP_046027_20210725_20210803_02_T1_SR_B5.TIF
+https://titiler.xyz/cog/viewer?url=https://scottyhq.github.io/share-a-raster/LC08_L2SP_046027_20210725_20210803_02_T1_SR_B5.TIF
 
 Or open with rioxarray
 ```python
 import xarray as xr
-URL = 'https://github.io/scottyhq/share-a-raster/LC08_L2SP_046027_20210725_20210803_02_T1_SR_B5.TIF'
+URL = 'https://scottyhq.github.io/share-a-raster/LC08_faux.tif'
 da = xr.open_dataset(URL, engine='rasterio')
 da
 ```
