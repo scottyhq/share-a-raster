@@ -38,6 +38,8 @@ Consider sharing a file that is obscured rather than setting up complicated auth
 
 ## Limitations
 
-GitHub isn't really designed for sharing data, so this is best for small COGs to share among colleagues. If you want long-term storage that is high performance look into options like cloud object storage (AWS S3 etc).
+GitHub isn't really designed for sharing data, so this is best for small COGs (<100MB) to share among colleagues. If you want long-term storage that is high performance look into options like cloud object storage (AWS S3 etc).
 
 Check out https://github.com/scottyhq/zarrdata for a similar example with Zarr instead of COG
+
+Or use a service list Felt https://felt.com/blog/raster-imagery-and-geotiffs-in-felt
